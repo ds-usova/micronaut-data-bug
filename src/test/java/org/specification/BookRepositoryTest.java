@@ -75,7 +75,6 @@ class BookRepositoryTest implements TestPropertyProvider {
         assertTrue(books.stream().allMatch(book -> "J.K. Rowling".equals(book.getAuthor())));
     }
 
-
     @Test
     void findAllBySpecificationFiltersCorrectly() {
         QuerySpecification<Book> authorSpec = (root, query, criteriaBuilder) ->
